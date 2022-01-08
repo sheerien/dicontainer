@@ -1,0 +1,30 @@
+{
+    "name": "dic/container",
+    "description": "explain php dependency injection container",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Dic\\Container\\": "src/core"
+        },
+        "files": [
+            "src/core/Support/helper.php"
+        ]
+
+    },
+    "authors": [{
+        "name": "sheerien",
+        "email": "freemebabaj@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "symfony/var-dumper": "6.1.x-dev",
+        "filp/whoops": "^2.14"
+    },
+    "require": {
+        "php": ">=8.0",
+        "vlucas/phpdotenv": "5.4.x-dev",
+        "psr/container": "2.0.x-dev"
+    }
+}
